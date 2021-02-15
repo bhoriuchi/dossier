@@ -1,0 +1,15 @@
+---
+version: 1
+defaults:
+  datadir: data
+  mapdir: map
+
+hierarchy:
+- name: Environment
+  path: environment/%{environment}
+
+- name: Datacenter
+  path: datacenter/%{datacenter}
+
+- name: Defaults
+  path: defaults.yaml
